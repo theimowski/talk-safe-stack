@@ -1,3 +1,14 @@
+# DEMO
+
+## Creating SAFE project
+
+* Create dir
+* `dotnet new -i SAFE.Template`
+* `dotnet new SAFE --Fulma --Remoting`
+* `code .`
+* `build run`
+* While the build is running, tell more about Fulma and Remoting, and about project structure
+
 Agenda :
 
 * Brief intro

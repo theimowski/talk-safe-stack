@@ -73,7 +73,7 @@ https://safe-stack.github.io
 
 ## <span style="color: #e7ad52;">S</span> for <span style="color: #e7ad52;">S</span>uave <span>
 
-<img src="images/suave_logo_only.png" style="background: transparent; border: none; box-shadow: none" width="80" />
+<img src="images/suave_logo_only.png" style="background: transparent; border: none; box-shadow: none" width="100" />
 
 https://suave.io
 
@@ -81,7 +81,6 @@ https://suave.io
 * Alternatives:
   * [Giraffe](https://github.com/giraffe-fsharp/Giraffe) (on top of ASP.NET Core)
   * [Freya](https://freya.io/) (web-machine like)
-  * [WebSharper](https://websharper.com/)
 
 ***
 
@@ -127,18 +126,35 @@ https://fable-elmish.github.io/elmish
 * Alternatives:
   * [WebSharper](https://websharper.com/) models
 
+***
+
+<img src="images/safe_stack.png" style="background: transparent; border: none; box-shadow: none" />
 
 ***
 
 ##  Demo overview
 
-Domain
+### Simple voting form
 
 ***
 
 ## Creating SAFE project
 
-dotnet new
+#### Prerequisites:
+
+* [dotnet SDK 2](https://www.microsoft.com/net/core)
+* [node.js](https://nodejs.org/)
+* [yarn](https://yarnpkg.com/)
+* [.NET Framework](https://www.microsoft.com/net/download) or [mono](http://www.mono-project.com/) for build process
+
+***
+
+## Creating SAFE project
+
+* Install SAFE template: `dotnet new -i SAFE.Template`
+* Create project from template: `dotnet new SAFE`
+* Build & run: `build run`
+* Wait for build to finish: app opens up in browser
 
 ***
 
