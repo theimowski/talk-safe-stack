@@ -1,5 +1,3 @@
-Slides + Demo // just demo?
-
 Agenda :
 
 * Brief intro
