@@ -171,6 +171,9 @@ https://fable-elmish.github.io/elmish
 
 ## View
 
+* Fulma - bootstrap view quickly
+* HMR - "live preview"
+
 ***
 
 ## DEMOSTEPS
