@@ -9,6 +9,20 @@
 * `build run`
 * While the build is running, tell more about Fulma and Remoting, and about project structure
 
+## View 
+
+* Replace "SAFE Template" with "SAFE Demo"
+* Replace safeComponents with "Score the talk"
+* Remove safeComponents
+* Add logo: Level.level -> Level.item -> Image.image -> img (imgSrc depending on context)
+* (git history)
+* place some text in input to show that HMR preserves state (need to have model state?)
+
+Next: Overall smileys
+## ELM-Arch?
+## Shared code?
+
+
 Agenda :
 
 * Brief intro
@@ -25,6 +39,8 @@ Agenda :
 * `build run` - while running, explain stuff
 
 To show:
+
+* Explain Elm-architecture
 
 * HMR
 * Time-travel debugger

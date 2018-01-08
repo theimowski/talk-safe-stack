@@ -156,6 +156,21 @@ https://fable-elmish.github.io/elmish
 * Build & run: `build run`
 * Wait for build to finish: app opens up in browser
 
+
+***
+
+## View
+
+* [Fable](http://fable.io/) - Compiling F# to JS
+* [Elmish](https://fable-elmish.github.io/elmish/) - UI library for Fable
+* [React](https://reactjs.org/) under the hood
+* [Webpack](https://webpack.js.org) + Hot Module Replacement
+* [Fulma](https://github.com/MangelMaxime/Fulma) - Bindings for Elmish + [Bulma](https://bulma.io/) (CSS Framework) + [Landing Bulma Template](https://dansup.github.io/bulma-templates/)
+
+***
+
+## View
+
 ***
 
 ## DEMOSTEPS
