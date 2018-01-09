@@ -156,14 +156,23 @@ https://fable-elmish.github.io/elmish
 * Build & run: `build run`
 * Wait for build to finish: app opens up in browser
 
+***
+
+## Architecture
+
+* Shared code
+  * [Fable.Remoting](https://github.com/Zaid-Ajaj/Fable.Remoting)
+* Server side
+  * [Suave](https://suave.io)
+* Client side
+  * [Fable](http://fable.io/)
+  * [Elmish](https://fable-elmish.github.io/elmish/)
+  * [React](https://reactjs.org/) under the hood
 
 ***
 
 ## View
 
-* [Fable](http://fable.io/) - Compiling F# to JS
-* [Elmish](https://fable-elmish.github.io/elmish/) - UI library for Fable
-* [React](https://reactjs.org/) under the hood
 * [Webpack](https://webpack.js.org) + Hot Module Replacement
 * [Fulma](https://github.com/MangelMaxime/Fulma) - Bindings for Elmish + [Bulma](https://bulma.io/) (CSS Framework) + [Landing Bulma Template](https://dansup.github.io/bulma-templates/)
 
@@ -171,7 +180,7 @@ https://fable-elmish.github.io/elmish
 
 ## View
 
-* Fulma - bootstrap view quickly
+* Fulma - create view quickly
 * HMR - "live preview"
 
 ***

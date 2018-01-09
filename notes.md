@@ -9,6 +9,10 @@
 * `build run`
 * While the build is running, tell more about Fulma and Remoting, and about project structure
 
+## Architecture
+
+* Shared code - counter type + Fable.Remoting - not restful, but just fine for our case
+
 ## View 
 
 * Replace "SAFE Template" with "SAFE Demo"
@@ -17,6 +21,8 @@
 * Add logo: Level.level -> Level.item -> Image.image -> img (imgSrc depending on context)
 * (git history)
 * place some text in input to show that HMR preserves state (need to have model state?)
+
+
 
 Next: Overall smileys
 ## ELM-Arch?
@@ -60,6 +66,7 @@ To show:
 
 To resolve:
 
+* Template - rename "Program" to "Server", "App" to "Client"
 * What domain to show? Presentation feedback - demo deploy actual app? (generate QR code for audience to scan)
 * Time travel debugger how it works
 * Warning: C:/Users/BRE44821/.nuget/packages/fulma/1.0.0-beta-005/fable/Elements/Heading.fs
