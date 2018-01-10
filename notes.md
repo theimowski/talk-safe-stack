@@ -12,22 +12,34 @@
 ## Architecture
 
 * Shared code - counter type + Fable.Remoting - not restful, but just fine for our case
+* Server side - how init counter works, webpart
+* Client side - all compiled to fable, elmish architecture explained
 
-## View 
+## Building form 
 
+* model init update in App.fs
 * Replace "SAFE Template" with "SAFE Demo"
 * Replace safeComponents with "Score the talk"
 * Remove safeComponents
 * Add logo: Level.level -> Level.item -> Image.image -> img (imgSrc depending on context)
 * (git history)
-* place some text in input to show that HMR preserves state (need to have model state?)
+* define onInput wih JsInterop; add comment to model4
+* add model to name
+* place some text in input to show that HMR preserves state
 
+## Client side debugging
 
+* Console trace
+* Redux-devtools (Time-travel debugger)
+* React-devtools - is outlined on smileys
 
-Next: Overall smileys
-## ELM-Arch?
-## Shared code?
+NEXT: add vote to Fable.remoting - go to server, save vote and respond with responses, build up view for responses
 
+## Deploy
+
+* script, but also F# with FAKE
+
+---
 
 Agenda :
 
@@ -44,18 +56,23 @@ Agenda :
 * dotnet new SAFE 
 * `build run` - while running, explain stuff
 
+---
+
 To show:
 
 * Explain Elm-architecture
-
+ 
 * HMR
-* Time-travel debugger
+
 * Console trace
+* Redux-devtools (time travel debugger)
+* React-devtools (for better UI debugging) ? - what fancy can you do with that?
+
+---
+
 * Server refresh
 * Shared code
 * Server-side + client-side validation
-* React-devtools (for better UI debugging) ? - what fancy can you do with that?
-* Redux-devtools (time travel debugger)
 * Debugging server side?
 * Web App for Containers (Docker) - do manually, not from template?
 
