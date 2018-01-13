@@ -33,7 +33,15 @@
 * Redux-devtools (Time-travel debugger)
 * React-devtools - is outlined on smileys
 
-NEXT: add vote to Fable.remoting - go to server, save vote and respond with responses, build up view for responses
+## Talking to server side 
+
+* Submitting vote - disabling controls on Loading
+* Adding protocol to Fable.Remoting
+* Server refresh (dotnet watch)
+* Firing request in Client side
+* Displaying results
+
+NEXT: deploy?
 
 ## Deploy
 
@@ -83,6 +91,7 @@ To show:
 
 To resolve:
 
+* Template - view in separate file?
 * Template - rename "Program" to "Server", "App" to "Client"
 * What domain to show? Presentation feedback - demo deploy actual app? (generate QR code for audience to scan)
 * Time travel debugger how it works

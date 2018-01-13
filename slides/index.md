@@ -189,6 +189,14 @@ https://fable-elmish.github.io/elmish
 
 ***
 
+## Talking to server side
+
+* [Fable.Remoting](https://github.com/Zaid-Ajaj/Fable.Remoting)
+* Server refresh (dotnet watch)
+* Triggering calls from Client side
+
+***
+
 ## DEMOSTEPS
 
 TODO
