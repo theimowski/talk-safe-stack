@@ -41,11 +41,17 @@
 * Firing request in Client side
 * Displaying results
 
-NEXT: deploy?
-
 ## Deploy
 
 * script, but also F# with FAKE
+* bundle - publish server, collect client
+* start docker-machine
+* build docker
+* run in docker -  `docker run -d -p 8085:8085 --rm --name safe-demo-test -it theimowski/safe-demo`
+* login to docker (do before demo)
+* deploy to docker hub
+* azure - create new web app for container
+* map port 8085 to 80 `az webapp config appsettings set --resource-group safe-demo --name safe-demo --settings WEBSITES_PORT=8085`
 
 ---
 
@@ -91,6 +97,8 @@ To show:
 
 To resolve:
 
+* Pin paket so that it does not get updated?
+* Old version of docker installed "system root pool not available on Windows"
 * Template - view in separate file?
 * Template - rename "Program" to "Server", "App" to "Client"
 * What domain to show? Presentation feedback - demo deploy actual app? (generate QR code for audience to scan)

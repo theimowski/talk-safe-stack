@@ -197,15 +197,11 @@ https://fable-elmish.github.io/elmish
 
 ***
 
-## DEMOSTEPS
-
-TODO
-
-***
-
 ## Deploying the app
 
-Azure / AWS
+* Bundle
+* Docker
+* Azure
 
 ***
 
