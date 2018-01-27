@@ -1,3 +1,11 @@
+# Before
+
+* Make sure docker-machine is running
+* Prepare fall-back steps
+* Prepare Azure portal
+* Prepare Docker hub
+* Login to docker hub
+
 # DEMO
 
 ## Creating SAFE project
@@ -52,6 +60,7 @@
 * deploy to docker hub
 * azure - create new web app for container
 * map port 8085 to 80 `az webapp config appsettings set --resource-group safe-demo --name safe-demo --settings WEBSITES_PORT=8085`
+* think of something to say when the contianer is warming up
 
 ---
 
@@ -97,12 +106,13 @@ To show:
 
 To resolve:
 
+* Docker build stuff to template with optional param
+* Writing comment on mobile with autocorrect -strange things happen
 * Pin paket so that it does not get updated?
+* Leave out disabling inputs?
+* Pin packages so that they do not get updated?
 * Old version of docker installed "system root pool not available on Windows"
 * Template - view in separate file?
-* Template - rename "Program" to "Server", "App" to "Client"
-* What domain to show? Presentation feedback - demo deploy actual app? (generate QR code for audience to scan)
-* Time travel debugger how it works
 * Warning: C:/Users/BRE44821/.nuget/packages/fulma/1.0.0-beta-005/fable/Elements/Heading.fs
 C:/Users/BRE44821/.nuget/packages/fulma/1.0.0-beta-005/fable/Elements/Heading.fs(92,8): (92,9) warning FABLE: Looks like Fulma.Elements.Heading.p uses point-free style, this may create problems in runtime, please declare all arguments explicitly.
  @ ./App.fs 19:0-115
