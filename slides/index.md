@@ -79,7 +79,7 @@ https://suave.io
 
 * Standalone, lightweight & composable web **server**
 * Alternatives:
-  * [Giraffe](https://github.com/giraffe-fsharp/Giraffe) (on top of ASP.NET Core)
+  * [Giraffe](https://github.com/giraffe-fsharp/Giraffe) (on top of ASP.NET Core), or [Saturn](https://github.com/SaturnFramework/Saturn)
   * [Freya](https://freya.io/) (web-machine like)
 
 ***
@@ -205,9 +205,14 @@ https://fable-elmish.github.io/elmish
 
 ***
 
+<img src="images/safe_top.png" style="background: transparent; border: none; box-shadow: none"  />
+
+
 ## Next steps
 
-Links to BookStore, ConfPlanner & more
-Mention what they add on top
+* [SAFE BookStore](https://github.com/SAFE-Stack/SAFE-BookStore) - Tests
+* [SAFE Nightwatch](https://github.com/SAFE-Stack/SAFE-Nightwatch) - React Native
+* [SAFE ConfPlanner](https://github.com/SAFE-Stack/SAFE-ConfPlanner) - CQRS + Event-Sourcing
+* You?
 
 ***
