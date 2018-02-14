@@ -174,7 +174,6 @@ https://fable-elmish.github.io/elmish
 ## Building form
 
 * [Webpack](https://webpack.js.org)
-* Hot Module Replacement
 * [Bulma](https://bulma.io/) (CSS Framework)
 * [Fulma](https://github.com/MangelMaxime/Fulma) - Bulma bindings for Elmish
 * [Landing Bulma Template](https://dansup.github.io/bulma-templates/)
@@ -184,6 +183,7 @@ https://fable-elmish.github.io/elmish
 ## Client side debugging
 
 * Console trace
+* Hot Module Replacement 
 * [Redux-devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) (Time-travel debugger)
 * [React-devtools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 
