@@ -1,7 +1,8 @@
 # Before
 
+* !! Prepare fall-back steps (video + dirs)
+
 * Make sure docker-machine is running
-* Prepare fall-back steps (video + dirs)
 * Prepare Azure portal
 * Prepare Docker hub
 * Login to docker hub

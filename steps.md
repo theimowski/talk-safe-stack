@@ -49,16 +49,19 @@
 * add `countVotes function`, `vote` async function with 1000 sleep
 * change adapter to use voting WebPart instead of counter
 * replace counting protocol with voting in client
-* add `Results` to model, init
 * add `mkVote` function
-* add `GotResults` to Msg, update (use commented out cmd from init)
-
-.... showing results
+* add `GotResults` to Msg, handle in update - just unload
+* add cmd when Submit (use commented out cmd from init) 
+* add `Results` to model, init
+* distinguish GotResults Ok and rest in update
+* `resultsBox` (empty), `formBox` and `containerBox` with pattern match
+* fill out `resultsBox` -> copy from scores, but div instead of button
+* add contents (small) for comments
 
 ## Deploy
 
 * build.fsx: change docker user and image name, copy image name
-* Copy and adjust Deploy target
+* Copy and adjust Deploy target (push imageFullName, add to chain)
 * `build deploy`
 * create repository in docker hub
 * create web app in azure
