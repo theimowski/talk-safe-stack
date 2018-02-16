@@ -21,10 +21,15 @@ http://theimowski.com
 
 * SAFE - big picture
 * Demo overview
-* Creating SAFE project
-* DEMOSTEPS
-* Deploying the app
+* Demo itself
 * Next Steps
+
+
+***
+
+<img src="images/safe_top.png" style="background: transparent; border: none; box-shadow: none"  />
+
+# ???
 
 ***
 
@@ -144,8 +149,10 @@ https://fable-elmish.github.io/elmish
 
 * [dotnet SDK 2](https://www.microsoft.com/net/core)
 * [node.js](https://nodejs.org/)
-* [yarn](https://yarnpkg.com/)
-* [.NET Framework](https://www.microsoft.com/net/download) or [mono](http://www.mono-project.com/) for build process
+* [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
+* [.NET Framework](https://www.microsoft.com/net/download) or [mono](http://www.mono-project.com/) for build process\*
+
+\* removing this dependency is WIP
 
 ***
 
@@ -182,6 +189,7 @@ https://fable-elmish.github.io/elmish
 
 ## Client side debugging
 
+* Binding in "Elm Architecture" style
 * Console trace
 * Hot Module Replacement 
 * [Redux-devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) (Time-travel debugger)

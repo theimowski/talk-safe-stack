@@ -56,7 +56,7 @@
 * distinguish GotResults Ok and rest in update
 * `resultsBox` (empty), `formBox` and `containerBox` with pattern match
 * fill out `resultsBox` -> copy from scores, but div instead of button
-* add contents (small) for comments
+* add contents (small) for comments (quotes in italics)
 
 ## Deploy
 
