@@ -1,0 +1,306 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SAFE apps with F# web stack</title>
+    <meta name="description" content="">
+    <meta name="author" content="Tomasz Heimowski">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="//code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="//code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/style.css" />
+    <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/deedle.css" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" />
+    <script src="fsharp.formatting/styles/tips.js" type="text/javascript"></script>
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/fsreveal.css">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <script language="javascript" type="text/javascript">
+        function init()
+        {
+            websocket = new WebSocket("ws://"+window.location.host+"/websocket");
+            websocket.onmessage = function(evt) { location.reload(); };
+        }
+        window.addEventListener("load", init, false);
+    </script>
+</head>
+<body>
+    <div class="reveal">
+        
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section >
+<img src="images/safe_top.png" style="background: transparent; border: none; box-shadow: none"  />
+<h1>apps</h1>
+<h2>with <span style="color: #e7ad52;">F#</span> web stack</h2>
+<p>Tomasz Heimowski</p>
+<p><a href="http://theimowski.com">http://theimowski.com</a></p>
+</section>
+<section >
+<h2>Agenda</h2>
+<ul>
+<li>SAFE - big picture</li>
+<li>
+Demo
+<ul>
+<li>Overview</li>
+<li>Creating SAFE apps</li>
+<li>Building UI</li>
+<li>Client <-> Server communication</li>
+<li>Deploying</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<img src="images/safe_top.png" style="background: transparent; border: none; box-shadow: none"  />
+<h1>???</h1>
+</section>
+<section >
+<p><img src="images/mean.png" alt="Mean" /></p>
+<small>https://www.troofal.com/services/mean-stack</small>
+</section>
+<section >
+<p><img src="images/lamp.jpg" alt="LAMP" /></p>
+<small>https://www.programmableweb.com/news/what-mean-stack-and-why-it-better-lamp/analysis/2015/12/22</small>
+</section>
+<section >
+<p><img src="images/lamp_better.jpg" alt="LAMP" /></p>
+<small>https://www.unixmen.com/how-to-install-lamp-stack-ubuntu-17-04</small>
+</section>
+<section >
+<p><img src="images/twitter_php.png" alt="PHP_LOL" /></p>
+<small>https://twitter.com/krisajenkins/status/903988761171820544</small>
+</section>
+<section >
+<img src="images/safe_top.png" style="background: transparent; border: none; box-shadow: none"  />
+<h2>big picture</h2>
+</br> 
+<ul>
+<li>Web stack</li>
+<li>Combines several OSS projects</li>
+<li>F# end-to-end</li>
+<li>Type-safe</li>
+<li>Cloud-ready</li>
+<li>Flexible</li>
+</ul>
+<p><a href="https://safe-stack.github.io">https://safe-stack.github.io</a></p>
+</section>
+<section >
+<img src="images/safe_s.png" style="background: transparent; border: none; box-shadow: none"  />
+<h2><span style="color: #e7ad52;">S</span> for <span style="color: #e7ad52;">S</span>uave <span></h2>
+<img src="images/suave_logo_only.png" style="background: transparent; border: none; box-shadow: none" width="100" />
+<p><a href="https://suave.io">https://suave.io</a></p>
+<ul>
+<li>Standalone, lightweight &amp; composable web <strong>server</strong></li>
+<li>
+Alternatives:
+<ul>
+<li><a href="https://github.com/giraffe-fsharp/Giraffe">Giraffe</a> (on top of ASP.NET Core), or <a href="https://github.com/SaturnFramework/Saturn">Saturn</a></li>
+<li><a href="https://freya.io/">Freya</a> (web-machine like)</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<img src="images/safe_a.png" style="background: transparent; border: none; box-shadow: none"  />
+<h2><span style="color: #e7ad52;">A</span> for <span style="color: #e7ad52;">A</span>zure <span></h2>
+<img src="images/azure.png" style="background: transparent; border: none; box-shadow: none" width="180" />
+<p><a href="https://azure.microsoft.com">https://azure.microsoft.com</a></p>
+<ul>
+<li><strong>Cloud</strong> provider from Microsoft</li>
+<li>
+Alternatives:
+<ul>
+<li>Amazon Web Services</li>
+<li>Google Cloud Platform</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<img src="images/safe_f.png" style="background: transparent; border: none; box-shadow: none"  />
+<h2><span style="color: #e7ad52;">F</span> for <span style="color: #e7ad52;">F</span>able <span></h2>
+<img src="images/fable_only_letter.png" style="background: transparent; border: none; box-shadow: none" width="100" />
+<p><a href="http://fable.io">http://fable.io</a></p>
+<ul>
+<li>F# to <strong>JS</strong> compiler powered by <a href="https://babeljs.io">Babel</a></li>
+<li>
+Alternatives:
+<ul>
+<li><a href="https://websharper.com/">WebSharper</a></li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<img src="images/safe_e.png" style="background: transparent; border: none; box-shadow: none"  />
+<h2><span style="color: #e7ad52;">E</span> for <span style="color: #e7ad52;">E</span>lmish <span></h2>
+<img src="images/elmish.png" style="background: transparent; border: none; box-shadow: none" width="140" />
+<p><a href="https://fable-elmish.github.io/elmish">https://fable-elmish.github.io/elmish</a></p>
+<ul>
+<li>UI library, inspired by Elm</li>
+<li>
+Alternatives:
+<ul>
+<li><a href="https://websharper.com/">WebSharper</a> models</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<img src="images/safe_stack.png" style="background: transparent; border: none; box-shadow: none" />
+</section>
+<section >
+<h2>Demo overview</h2>
+<h3>Simple voting form</h3>
+</section>
+<section >
+<h2>Creating SAFE project</h2>
+<h4>Prerequisites:</h4>
+<ul>
+<li><a href="https://www.microsoft.com/net/core">dotnet SDK 2</a></li>
+<li><a href="https://nodejs.org/">node.js</a></li>
+<li><a href="https://yarnpkg.com/">yarn</a> or <a href="https://www.npmjs.com/">npm</a></li>
+<li><a href="https://www.microsoft.com/net/download">.NET Framework</a> or <a href="http://www.mono-project.com/">mono</a> for build process*</li>
+</ul>
+<p>* removing this dependency is WIP</p>
+</section>
+<section >
+<h2>Creating SAFE project</h2>
+<ul>
+<li>Install SAFE template: <code>dotnet new -i SAFE.Template</code></li>
+<li>Create project from template: <code>dotnet new SAFE</code></li>
+<li>Build &amp; run: <code>build run</code></li>
+<li>Wait for build to finish: app opens up in browser</li>
+</ul>
+</section>
+<section >
+<h2>Architecture</h2>
+<ul>
+<li>
+Shared code
+<ul>
+<li><a href="https://github.com/Zaid-Ajaj/Fable.Remoting">Fable.Remoting</a></li>
+</ul>
+</li>
+<li>
+Server side
+<ul>
+<li><a href="https://suave.io">Suave</a></li>
+</ul>
+</li>
+<li>
+Client side
+<ul>
+<li><a href="http://fable.io/">Fable</a></li>
+<li><a href="https://fable-elmish.github.io/elmish/">Elmish</a></li>
+<li><a href="https://reactjs.org/">React</a> under the hood</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<h2>Building form</h2>
+<ul>
+<li><a href="https://webpack.js.org">Webpack</a></li>
+<li><a href="https://bulma.io/">Bulma</a> (CSS Framework)</li>
+<li><a href="https://github.com/MangelMaxime/Fulma">Fulma</a> - Bulma bindings for Elmish</li>
+<li><a href="https://dansup.github.io/bulma-templates/">Landing Bulma Template</a></li>
+</ul>
+</section>
+<section >
+<h2>Client side debugging</h2>
+<ul>
+<li>Binding in "Elm Architecture" style</li>
+<li>Console trace</li>
+<li>Hot Module Replacement</li>
+<li><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd">Redux-devtools</a> (Time-travel debugger)</li>
+<li><a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">React-devtools</a></li>
+</ul>
+</section>
+<section >
+<h2>Talking to server side</h2>
+<ul>
+<li><a href="https://github.com/Zaid-Ajaj/Fable.Remoting">Fable.Remoting</a></li>
+<li>Server refresh (dotnet watch)</li>
+<li>Triggering calls from Client side</li>
+</ul>
+</section>
+<section >
+<h2>Deploying the app</h2>
+<ul>
+<li>Bundle</li>
+<li>Docker</li>
+<li>Azure</li>
+</ul>
+</section>
+<section >
+<img src="images/safe_top.png" style="background: transparent; border: none; box-shadow: none"  />
+<h2>Next steps</h2>
+<ul>
+<li><a href="https://github.com/SAFE-Stack/SAFE-BookStore">SAFE BookStore</a> - Tests</li>
+<li><a href="https://github.com/SAFE-Stack/SAFE-Nightwatch">SAFE Nightwatch</a> - React Native</li>
+<li><a href="https://github.com/SAFE-Stack/SAFE-ConfPlanner">SAFE ConfPlanner</a> - CQRS + Event-Sourcing</li>
+<li>You?</li>
+</ul>
+</section>
+
+
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        // Add the nohighlight class and data-noescape attribute to code elements that have already been formatted by FSharp.Formatting
+        $('pre.highlighted code').addClass('nohighlight').attr('data-noescape', '');
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
+</body>
+</html>
+
