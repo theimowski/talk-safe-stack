@@ -15,6 +15,8 @@ Tomasz Heimowski
 
 http://theimowski.com
 
+*@theimowski*
+
 ***
 
 ## Agenda
@@ -26,6 +28,12 @@ http://theimowski.com
   * Building UI
   * Client <-> Server communication
   * Deploying
+
+Slides available at http://theimowski.com/talk-safe-stack
+
+***
+
+# Disclaimer
 
 ***
 
@@ -182,10 +190,10 @@ https://fable-elmish.github.io/elmish
 
 ## Building form
 
-* [Webpack](https://webpack.js.org)
 * [Bulma](https://bulma.io/) (CSS Framework)
 * [Fulma](https://github.com/MangelMaxime/Fulma) - Bulma bindings for Elmish
 * [Landing Bulma Template](https://dansup.github.io/bulma-templates/)
+* [Webpack](https://webpack.js.org) + [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 
 ***
 
@@ -224,5 +232,7 @@ https://fable-elmish.github.io/elmish
 * [SAFE Nightwatch](https://github.com/SAFE-Stack/SAFE-Nightwatch) - React Native
 * [SAFE ConfPlanner](https://github.com/SAFE-Stack/SAFE-ConfPlanner) - CQRS + Event-Sourcing
 * You?
+
+Slides available at http://theimowski.com/talk-safe-stack
 
 ***

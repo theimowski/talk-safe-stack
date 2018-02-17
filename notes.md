@@ -1,6 +1,5 @@
 # Before
 
-* Publish slides to github pages
 * !! Prepare fall-back steps (video + dirs)
 
 * Open conf vendor logo in browser to copy url
