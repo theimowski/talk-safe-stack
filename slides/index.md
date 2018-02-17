@@ -20,10 +20,12 @@ http://theimowski.com
 ## Agenda
 
 * SAFE - big picture
-* Demo overview
-* Demo itself
-* Next Steps
-
+* Demo
+  * Overview
+  * Creating SAFE apps
+  * Building UI
+  * Client <-> Server communication
+  * Deploying
 
 ***
 

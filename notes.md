@@ -1,7 +1,9 @@
 # Before
 
+* Publish slides to github pages
 * !! Prepare fall-back steps (video + dirs)
 
+* Open conf vendor logo in browser to copy url
 * Make sure docker-machine is running
 * Prepare Azure portal
 * Prepare Docker hub
