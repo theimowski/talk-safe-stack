@@ -1,5 +1,6 @@
 # Before
 
+* Release slides (newest version)
 * !! Prepare fall-back steps (video + dirs)
 
 * Open conf vendor logo in browser to copy url
@@ -7,6 +8,7 @@
 * Prepare Azure portal
 * Prepare Docker hub
 * Login to docker hub
+* Start timer 
 
 # DEMO
 

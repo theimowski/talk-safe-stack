@@ -28,12 +28,17 @@ http://theimowski.com
   * Building UI
   * Client <-> Server communication
   * Deploying
+* Q&A
 
 Slides available at http://theimowski.com/talk-safe-stack
 
 ***
 
 # Disclaimer
+
+***
+
+# My goal
 
 ***
 
