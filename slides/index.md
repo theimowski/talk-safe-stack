@@ -81,7 +81,7 @@ Slides available at http://theimowski.com/talk-safe-stack
 * Web stack
 * Combines several OSS projects
 * F# end-to-end
-* Type-safe
+* Type-SAFE
 * Cloud-ready
 * Flexible
 

@@ -1,14 +1,17 @@
 # Before
 
 * Release slides (newest version)
-* !! Prepare fall-back steps (video + dirs)
+* Prepare fall-back steps (video + dirs)
+* Deploy test app to azure
+
+---
 
 * Open conf vendor logo in browser to copy url
 * Make sure docker-machine is running
 * Prepare Azure portal
 * Prepare Docker hub
 * Login to docker hub
-* Start timer 
+* Start timer
 
 # DEMO
 
