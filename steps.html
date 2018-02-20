@@ -22,9 +22,8 @@ ul.contains-task-list { padding-left: 0; } ul ul.contains-task-list { padding-le
     <body>
         <h4 id="creating-safe-project">Creating SAFE project</h4>
 <ul>
-<li><code>dotnet new -i SAFE.Template</code></li>
 <li><code>dotnet new SAFE --Fulma landing --Remoting --Docker --language F#</code></li>
-<li><code>code .</code>, then * <code>build run</code></li>
+<li><code>code .</code>, then <code>build run</code></li>
 </ul>
 <h4 id="building-form">Building form</h4>
 <ul>
@@ -37,36 +36,37 @@ ul.contains-task-list { padding-left: 0; } ul ul.contains-task-list { padding-le
 <li>add submit (Button.a), make it primary color + full width</li>
 <li>add scores field: Level (ismobile) -&gt; column item -&gt; button.a -&gt; <code>Icon.faIcon [ ] [ Fa.icon Fa.I.SmileO ]</code></li>
 <li>add 2x (<code>Fa.fa2x</code> to contents), color and outlined to button</li>
-<li>add function <code>scoreIcon</code> - play with icons, add function <code>scoreColor</code> with <code>IsWhite</code> for no <code>yield</code></li>
+<li>add function <code>scoreIcon</code> - play with icons, add function <code>scoreColor</code></li>
 </ul>
 <h4 id="client-side-debugging">Client side debugging</h4>
 <ul>
 <li>change Model, Msg, init and update</li>
-<li><code>Fable.Core.JsInterop</code>, <code>let onInput action = OnInput (fun e -&gt; action !!e.target?value)</code></li>
-<li>bind comment, name and score</li>
+<li><code>Fable.Core.JsInterop</code>, <code>let onChange action = OnChange (fun e -&gt; action !!e.target?value)</code></li>
+<li>bind comment, name - <strong>!!! use <code>DefaultValue</code> instead of <code>Value</code> !!!</strong></li>
+<li>bind score, <code>scoreColor</code> function: <code>IsWhite</code> for <code>None</code> and <code>Some s when s &lt;&gt; score</code></li>
 <li>demonstrate client side debug - console, HMR, redux, react</li>
 </ul>
 <h4 id="talking-to-server-side">Talking to server side</h4>
 <ul>
 <li>add <code>Submit</code> to Msg, add <code>Loading</code> to Model, init, update</li>
 <li>bind submit button, disable all inputs when loading</li>
-<li>move <code>Score</code> to Shared, add Vote and VotingProtocol types</li>
+<li>move <code>Score</code> to Shared, add <code>Vote</code> and <code>VotingProtocol</code> types</li>
 <li>Server: <code>let votes = System.Collections.ConcurrentBag&lt;Vote&gt;()</code></li>
-<li>add <code>countVotes function</code>, <code>vote</code> async function with 1000 sleep</li>
+<li>add <code>countVotes function</code> - <strong>filter empty first</strong>, <code>vote</code> async function with 1000 sleep</li>
 <li>server adapter: counter -&gt; voting, client proxy: counter -&gt; voting</li>
-<li>add <code>mkVote</code> function, <code>GotResults</code> to Msg, update - just <code>loading = false</code></li>
+<li>add <code>mkVote</code> function,</li>
+<li>add <code>Results</code> of <code>Result&lt;VotingResults,exn&gt;</code> to model</li>
+<li><code>GotResults</code> to Msg, update, handle both Ok and Error</li>
 <li>add cmd | Submit <code>Cmd.ofAsync Server.api.vote (mkVote model') (Ok &gt;&gt; GR)...</code></li>
-<li>add <code>Results</code> of <code>Result&lt;VotingResults,exn&gt;</code> to model, init</li>
-<li>distinguish GotResults Ok and rest in update</li>
 <li><code>resultsBox</code> (empty), <code>formBox</code> and <code>containerBox</code> with pattern match</li>
 <li>fill out <code>resultsBox</code> -&gt; copy from scores, but div instead of button</li>
 <li>add contents (small) for comments (quotes in italics)</li>
 </ul>
 <h4 id="deploy">Deploy</h4>
 <ul>
-<li>build.fsx: change docker user and image name, copy image name</li>
+<li>build.fsx: <strong>change docker user and image name</strong></li>
 <li>Copy and adjust Deploy target (push imageFullName, add to chain)</li>
-<li><code>build deploy</code> fast!</li>
+<li><code>build deploy</code> fast! copy image name</li>
 <li>create repository in docker hub, create web app in azure</li>
 </ul>
 
