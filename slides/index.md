@@ -11,11 +11,13 @@
 
 ## with <span style="color: #e7ad52;">F#</span> web stack
 
-Tomasz Heimowski
+Tomasz Heimowski *@theimowski*
 
-http://theimowski.com
+http://theimowski.com 
 
-*@theimowski*
+
+<img src="images/ihsmarkit.png" width="270px" style="background: transparent; border: none; box-shadow: none"  />
+
 
 ***
 

@@ -10,7 +10,10 @@
 * Make sure docker-machine is running
 * Prepare Azure portal
 * Prepare Docker hub
+* Prepare GoQr.me
 * Login to docker hub
+* Make sure Flux is not running
+* Turn on *Presentation Mode* -> Windows Mobility Center  http://www.thewindowsclub.com/presentation-settings-in-windows-7
 * Start timer
 
 # DEMO
