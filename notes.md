@@ -6,6 +6,7 @@
 
 ---
 
+* Double check internet connection - speedtest.net
 * Open conf vendor logo in browser to copy url
 * Make sure docker-machine is running
 * Prepare Azure portal
