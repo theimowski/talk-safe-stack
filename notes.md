@@ -19,13 +19,16 @@
 
 ## F# Exchange
 
+---
+
+
 * https://res.cloudinary.com/skillsmatter/image/upload/c_fill,w_300,h_300,g_north_west/v1519237242/jtvg3oimrx6qdxwofs4a.png
-* Create a blog entry for sneak preview
+
 * Watch video from Lambda Days and write down notes
 * What to change compared to Lambda Days?
 * Different audience - can assume most are familiar with F#
 * Mention other talks during F# Exchange on the topic
-* Don't spoil Elmish talk afterwards
+* Elmish talk comes before mine
 * Make the comments list look nicer?
 * https://twitter.com/sforkmann/status/969565080768655360 server side rendering ?
 

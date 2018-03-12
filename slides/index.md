@@ -242,4 +242,6 @@ https://fable-elmish.github.io/elmish
 
 Slides available at http://theimowski.com/talk-safe-stack
 
+This presentation will soon be available on the conference website [here](https://skillsmatter.com/conferences/9419-f-sharp-exchange-2018#skillscasts)
+
 ***
