@@ -6,30 +6,58 @@
 
 ---
 
-* Double check internet connection - speedtest.net
-* Open conf vendor logo in browser to copy url
-* Make sure docker-machine is running
-* Prepare Azure portal
-* Prepare Docker hub
-* Prepare GoQr.me
-* Login to docker hub
-* Make sure Flux is not running
-* Turn on *Presentation Mode* -> Windows Mobility Center  http://www.thewindowsclub.com/presentation-settings-in-windows-7
+* Command prompt:
+  * Make sure docker-machine is running
+  * Login to docker hub
+
+* Chrome browser:
+  * Double check internet connection - speedtest.net
+  * Open conf vendor logo in browser to copy url
+  * Prepare Azure portal
+  * Prepare Docker hub
+  * Prepare GoQr.me
+
+* Windows: 
+  * Make sure Flux is not running
+  * Hide taskbar
+  * turn on *Presentation Mode* -> Windows Mobility Center  http://www.thewindowsclub.com/presentation-settings-in-windows-7
+
+* VS Code:
+  * Open directory (after creating from template),
+  * Hide menu bar,
+  * Hide activity,
+  * Hide status bar (Toggle visibility)
+  * Hide minimap
+
+
+* Chrome app window:
+  * Chrome -> More tools -> Add to desktop -> Open as window -> open from desktop
+  * Side by side windows so that line with `Container.CustomClass Alignment.HasTextCentered` doesn't wrap
+
 * Start timer
 
 ## F# Exchange
 
----
+### UI
 
+* Logo - 128px, Style [ Border "2px solid" ]
+* "@F# eXchange '18"
+* Comments: ordered list, li [ Style [ TextAlign "left" ] ] 
+* See results - same as submit, but IsLight Color, dispatch SeeResults  
+
+---
 
 * https://res.cloudinary.com/skillsmatter/image/upload/c_fill,w_300,h_300,g_north_west/v1519237242/jtvg3oimrx6qdxwofs4a.png
 
 * Watch video from Lambda Days and write down notes
 * What to change compared to Lambda Days?
+
 * Different audience - can assume most are familiar with F#
-* Mention other talks during F# Exchange on the topic
-* Elmish talk comes before mine
-* Make the comments list look nicer?
+* Mention other talks during F# Exchange on the topic (Elmish talk comes before mine)
+
+* Fav icon
+* Validation? e.g. `mkVote : model -> Result<Vote, ValidationError>`? But server-side?
+* Saturn?
 * https://twitter.com/sforkmann/status/969565080768655360 server side rendering ?
 
 

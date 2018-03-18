@@ -235,13 +235,14 @@ https://fable-elmish.github.io/elmish
 
 ## Next steps
 
-* [SAFE BookStore](https://github.com/SAFE-Stack/SAFE-BookStore) - Tests
+* [SAFE BookStore](https://github.com/SAFE-Stack/SAFE-BookStore) - More complex + tests
 * [SAFE Nightwatch](https://github.com/SAFE-Stack/SAFE-Nightwatch) - React Native
 * [SAFE ConfPlanner](https://github.com/SAFE-Stack/SAFE-ConfPlanner) - CQRS + Event-Sourcing
+* [Server-Side Rendering](https://github.com/fable-compiler/fable-react/blob/master/docs/server-side-rendering.md#five-steps-to-enable-server-side-rendering-in-your-elmish--dotnet-app) - Back-end React
 * You?
 
 Slides available at http://theimowski.com/talk-safe-stack
 
-This presentation will soon be available on the conference website [here](https://skillsmatter.com/conferences/9419-f-sharp-exchange-2018#skillscasts)
+The video will soon be available on [F# exchange website](https://skillsmatter.com/conferences/9419-f-sharp-exchange-2018#skillscasts)
 
 ***
