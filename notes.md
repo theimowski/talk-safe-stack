@@ -17,7 +17,7 @@
   * Prepare Docker hub
   * Prepare GoQr.me
 
-* Windows: 
+* Windows:
   * Make sure Flux is not running
   * Hide taskbar
   * turn on *Presentation Mode* -> Windows Mobility Center  http://www.thewindowsclub.com/presentation-settings-in-windows-7
@@ -55,9 +55,10 @@
 * Different audience - can assume most are familiar with F#
 * Mention other talks during F# Exchange on the topic (Elmish talk comes before mine)
 
-* Fav icon
 * Validation? e.g. `mkVote : model -> Result<Vote, ValidationError>`? But server-side?
+* Fav icon
 * Saturn?
+* Azure functions?
 * https://twitter.com/sforkmann/status/969565080768655360 server side rendering ?
 
 

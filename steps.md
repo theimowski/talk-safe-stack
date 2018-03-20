@@ -7,7 +7,7 @@
 
 * remove CSS padding for subtitle
 * replace title with "SAFE Demo", subtitle with "Score my talk @...",  remove `safeComponents`
-* add event image (Level -> item -> Image -> img -> Src), scale it to 64x64
+* add image (Level -> item -> Image -> img -> Src), 128x128, `Style [ Border "2px solid" ]`
 * remove contents of `containerBox` and `show` function
 * open `Fulma.Elements.Form`, add field helper function
 * add comment (Textarea) and name (Input.text)
@@ -29,16 +29,19 @@
 * add `Submit` to Msg, add `Loading` to Model, init, update
 * bind submit button, disable all inputs when loading
 * move `Score` to Shared, add `Vote` and `VotingProtocol` types
+* `ValidationError` and `Vote.validate`
 * Server: `let votes = System.Collections.ConcurrentBag<Vote>()`
-* add `countVotes function` - **filter empty first**, `vote` async function with 1000 sleep
+* add `countVotes function` - **validate first**, `vote` async function with 1000 sleep
 * server adapter: counter -> voting, client proxy: counter -> voting
-* add `mkVote` function,
+* add `Error` of `string option` to model, view `Help.help [ Help.Color IsDanger ]`
 * add `Results` of `Result<VotingResults,exn>` to model
+* add `mkVote` function,
 * `GotResults` to Msg, update, handle both Ok and Error
 * add cmd | Submit `Cmd.ofAsync Server.api.vote (mkVote model') (Ok >> GR)...`
 * `resultsBox` (empty), `formBox` and `containerBox` with pattern match
 * fill out `resultsBox` -> copy from scores, but div instead of button
-* add contents (small) for comments (quotes in italics)
+* add contents (small) for comments (quotes in italics), `Style [ TextAlign "left" ]`
+* add "See results": getResults to protocol, Msg, update, results button
 
 #### Deploy
 
