@@ -13,11 +13,7 @@
 
 Tomasz Heimowski *@theimowski*
 
-http://theimowski.com 
-
-
-<img src="images/ihsmarkit.png" width="270px" style="background: transparent; border: none; box-shadow: none"  />
-
+http://theimowski.com
 
 ***
 
@@ -36,7 +32,10 @@ Slides available at http://theimowski.com/talk-safe-stack
 
 ***
 
+- data-background : images/confused.gif
+
 # Disclaimer
+
 
 ***
 

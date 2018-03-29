@@ -13,7 +13,7 @@
 * Chrome browser:
   * Double check internet connection - speedtest.net
   * Open conf vendor logo in browser to copy url
-  * Prepare Azure portal
+  * Prepare Azure portal (incognito)
   * Prepare Docker hub
   * Prepare GoQr.me
 
@@ -29,7 +29,6 @@
   * Hide status bar (Toggle visibility)
   * Hide minimap
 
-
 * Chrome app window:
   * Chrome -> More tools -> Add to desktop -> Open as window -> open from desktop
   * Side by side windows so that line with `Container.CustomClass Alignment.HasTextCentered` doesn't wrap
@@ -43,7 +42,11 @@
 * Logo - 128px, Style [ Border "2px solid" ]
 * "@F# eXchange '18"
 * Comments: ordered list, li [ Style [ TextAlign "left" ] ] 
-* See results - same as submit, but IsLight Color, dispatch SeeResults  
+* See results - same as submit, but IsLight Color, dispatch SeeResults
+* Explicit type signatures in SAFE.TEmplate  
+
+
+* Validation? e.g. `mkVote : model -> Result<Vote, ValidationError>`? But server-side?
 
 ---
 
@@ -55,8 +58,6 @@
 * Different audience - can assume most are familiar with F#
 * Mention other talks during F# Exchange on the topic (Elmish talk comes before mine)
 
-* Validation? e.g. `mkVote : model -> Result<Vote, ValidationError>`? But server-side?
-* Fav icon
 * Saturn?
 * Azure functions?
 * https://twitter.com/sforkmann/status/969565080768655360 server side rendering ?
