@@ -1,8 +1,3 @@
-#### Creating SAFE project
-
-* `dotnet new SAFE --Fulma landing --Remoting --Docker --language F#`
-* `code .`, then `build run`
-
 #### Building form
 
 * remove CSS padding for subtitle
@@ -11,7 +6,7 @@
 * remove contents of `containerBox` and `show` function, add field helper function
 * add comment (Textarea) and name (Input.text)
 * add submit (Button.a), make it primary color + full width
-* add scores field: Level (ismobile) -> column item -> button.a -> `Icon.faIcon [ ] [ Fa.icon Fa.I.SmileO ]`
+* add scores: Level (ismobile) -> item -> button.a -> `Icon.faIcon [] [ Fa.icon Fa.I.SmileO ]`
 * add 2x (`Fa.fa2x` to contents), color and outlined to button
 * add function `scoreIcon`, add function `scoreColor`
 

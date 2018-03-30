@@ -43,7 +43,7 @@
 * "@F# eXchange '18"
 * Comments: ordered list, li [ Style [ TextAlign "left" ] ] 
 * See results - same as submit, but IsLight Color, dispatch SeeResults
-* Explicit type signatures in SAFE.TEmplate  
+* Explicit type signatures in SAFE.Template
 
 
 * Validation? e.g. `mkVote : model -> Result<Vote, ValidationError>`? But server-side?
