@@ -9,6 +9,7 @@
 * Command prompt:
   * Make sure docker-machine is running
   * Login to docker hub
+    -> Docker DNS issues: `docker-machine ssh default` `sudo vi /etc/resolv.conf` change to 8.8.8.8
 
 * Chrome browser:
   * Double check internet connection - speedtest.net
