@@ -13,11 +13,7 @@
 
 Tomasz Heimowski *@theimowski*
 
-http://theimowski.com 
-
-
-<img src="images/ihsmarkit.png" width="270px" style="background: transparent; border: none; box-shadow: none"  />
-
+http://theimowski.com
 
 ***
 
@@ -36,7 +32,10 @@ Slides available at http://theimowski.com/talk-safe-stack
 
 ***
 
+- data-background : images/confused.gif
+
 # Disclaimer
+
 
 ***
 
@@ -235,11 +234,14 @@ https://fable-elmish.github.io/elmish
 
 ## Next steps
 
-* [SAFE BookStore](https://github.com/SAFE-Stack/SAFE-BookStore) - Tests
+* [SAFE BookStore](https://github.com/SAFE-Stack/SAFE-BookStore) - More complex + tests
 * [SAFE Nightwatch](https://github.com/SAFE-Stack/SAFE-Nightwatch) - React Native
 * [SAFE ConfPlanner](https://github.com/SAFE-Stack/SAFE-ConfPlanner) - CQRS + Event-Sourcing
+* [Server-Side Rendering](https://github.com/fable-compiler/fable-react/blob/master/docs/server-side-rendering.md#five-steps-to-enable-server-side-rendering-in-your-elmish--dotnet-app) - Back-end React
 * You?
 
 Slides available at http://theimowski.com/talk-safe-stack
+
+The video will soon be available on [F# exchange website](https://skillsmatter.com/conferences/9419-f-sharp-exchange-2018#skillscasts)
 
 ***
