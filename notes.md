@@ -36,6 +36,13 @@
 
 * Start timer
 
+
+
+## DevSharp / autotask / mac
+
+* "LoveShack '18" "Dev# '18"
+* https://applicationize.me/now
+
 ## F# Exchange
 
 ### UI

@@ -92,16 +92,15 @@ https://safe-stack.github.io
 
 <img src="images/safe_s.png" style="background: transparent; border: none; box-shadow: none"  />
 
-## <span style="color: #e7ad52;">S</span> for <span style="color: #e7ad52;">S</span>uave <span>
+## <span style="color: #e7ad52;">S</span> for <span style="color: #e7ad52;">S</span>aturn<span>
 
-<img src="images/suave_logo_only.png" style="background: transparent; border: none; box-shadow: none" width="100" />
+<img src="images/saturn.png" style="background: transparent; border: none; box-shadow: none" width="100" />
 
-https://suave.io
+https://saturnframework.org/
 
-* Standalone, lightweight & composable web **server**
-* Alternatives:
-  * [Giraffe](https://github.com/giraffe-fsharp/Giraffe) (on top of ASP.NET Core), or [Saturn](https://github.com/SaturnFramework/Saturn)
-  * [Freya](https://freya.io/) (web-machine like)
+* **Web server**
+* ASP.NET Core, Kestrel & Giraffe
+* MVC pattern
 
 ***
 
@@ -113,11 +112,7 @@ https://suave.io
 
 https://azure.microsoft.com
 
-* **Cloud** provider from Microsoft
-* Alternatives:
-  * Amazon Web Services
-  * Google Cloud Platform
-
+* **Cloud** provider
 
 ***
 
@@ -129,9 +124,8 @@ https://azure.microsoft.com
 
 http://fable.io
 
-* F# to **JS** compiler powered by [Babel](https://babeljs.io)
-* Alternatives:
-  * [WebSharper](https://websharper.com/)
+* F# to **JavaScript compiler**
+* Babel JS
 
 ***
 
@@ -141,11 +135,10 @@ http://fable.io
 
 <img src="images/elmish.png" style="background: transparent; border: none; box-shadow: none" width="140" />
 
-https://fable-elmish.github.io/elmish
+https://elmish.github.io
 
-* UI library, inspired by Elm
-* Alternatives:
-  * [WebSharper](https://websharper.com/) models
+* **UI library**
+* inspired by Elm
 
 ***
 
@@ -163,12 +156,13 @@ https://fable-elmish.github.io/elmish
 
 #### Prerequisites:
 
-* [dotnet SDK 2](https://www.microsoft.com/net/core)
-* [node.js](https://nodejs.org/)
-* [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
-* [.NET Framework](https://www.microsoft.com/net/download) or [mono](http://www.mono-project.com/) for build process\*
+* [.NET SDK 2.1](https://www.microsoft.com/net)
+* [FAKE 5](https://fake.build/) as global .NET tool
+* [.NET Framework](https://www.microsoft.com/net/download?initial-os=windows) / [Mono](http://www.mono-project.com/) for [Paket](https://github.com/fsprojects/Paket)\*
+* [Node.js](https://nodejs.org/)
+* [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/)
 
-\* removing this dependency is WIP
+\* removing this dependency is [WIP](https://github.com/fsprojects/Paket/pull/3183)
 
 ***
 
@@ -176,7 +170,7 @@ https://fable-elmish.github.io/elmish
 
 * Install SAFE template: `dotnet new -i SAFE.Template`
 * Create project from template: `dotnet new SAFE`
-* Build & run: `build run`
+* Build & run: `fake build --target run`
 * Wait for build to finish: app opens up in browser
 
 ***
@@ -190,7 +184,7 @@ https://fable-elmish.github.io/elmish
 * Client side
   * [Fable](http://fable.io/)
   * [Elmish](https://fable-elmish.github.io/elmish/)
-  * [React](https://reactjs.org/) under the hood
+  * [React](https://reactjs.org/)
 
 ***
 
@@ -224,8 +218,8 @@ https://fable-elmish.github.io/elmish
 ## Deploying the app
 
 * Bundle
-* Docker
-* Azure
+* Azure Resource Manager (ARM) Template
+* Azure App Service
 
 ***
 
@@ -240,8 +234,6 @@ https://fable-elmish.github.io/elmish
 * [Server-Side Rendering](https://github.com/fable-compiler/fable-react/blob/master/docs/server-side-rendering.md#five-steps-to-enable-server-side-rendering-in-your-elmish--dotnet-app) - Back-end React
 * You?
 
-Slides available at http://theimowski.com/talk-safe-stack
-
-The video will soon be available on [F# exchange website](https://skillsmatter.com/conferences/9419-f-sharp-exchange-2018#skillscasts)
+Slides: http://theimowski.com/talk-safe-stack
 
 ***
