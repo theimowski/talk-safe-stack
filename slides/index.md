@@ -180,7 +180,7 @@ https://elmish.github.io
 * Shared code
   * [Fable.Remoting](https://github.com/Zaid-Ajaj/Fable.Remoting)
 * Server side
-  * [Suave](https://suave.io)
+  * [Saturn](https://saturnframework.org/)
 * Client side
   * [Fable](http://fable.io/)
   * [Elmish](https://fable-elmish.github.io/elmish/)
@@ -228,9 +228,11 @@ https://elmish.github.io
 
 ## Next steps
 
-* [SAFE BookStore](https://github.com/SAFE-Stack/SAFE-BookStore) - More complex + tests
-* [SAFE Nightwatch](https://github.com/SAFE-Stack/SAFE-Nightwatch) - React Native
-* [SAFE ConfPlanner](https://github.com/SAFE-Stack/SAFE-ConfPlanner) - CQRS + Event-Sourcing
+* [SAFE Docs](https://safe-stack.github.io/docs/) - SAFE in a nutshell
+* Example apps
+  * [SAFE BookStore](https://github.com/SAFE-Stack/SAFE-BookStore) - More complex + tests
+  * [SAFE Nightwatch](https://github.com/SAFE-Stack/SAFE-Nightwatch) - React Native
+  * [SAFE ConfPlanner](https://github.com/SAFE-Stack/SAFE-ConfPlanner) - CQRS + Event-Sourcing
 * [Server-Side Rendering](https://github.com/fable-compiler/fable-react/blob/master/docs/server-side-rendering.md#five-steps-to-enable-server-side-rendering-in-your-elmish--dotnet-app) - Back-end React
 * You?
 
