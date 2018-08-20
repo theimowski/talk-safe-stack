@@ -116,18 +116,13 @@ Demo
 </section>
 <section >
 <img src="images/safe_s.png" style="background: transparent; border: none; box-shadow: none"  />
-<h2><span style="color: #e7ad52;">S</span> for <span style="color: #e7ad52;">S</span>uave <span></h2>
-<img src="images/suave_logo_only.png" style="background: transparent; border: none; box-shadow: none" width="100" />
-<p><a href="https://suave.io">https://suave.io</a></p>
+<h2><span style="color: #e7ad52;">S</span> for <span style="color: #e7ad52;">S</span>aturn<span></h2>
+<img src="images/saturn.png" style="background: transparent; border: none; box-shadow: none" width="100" />
+<p><a href="https://saturnframework.org/">https://saturnframework.org/</a></p>
 <ul>
-<li>Standalone, lightweight &amp; composable web <strong>server</strong></li>
-<li>
-Alternatives:
-<ul>
-<li><a href="https://github.com/giraffe-fsharp/Giraffe">Giraffe</a> (on top of ASP.NET Core), or <a href="https://github.com/SaturnFramework/Saturn">Saturn</a></li>
-<li><a href="https://freya.io/">Freya</a> (web-machine like)</li>
-</ul>
-</li>
+<li><strong>Web server</strong></li>
+<li>ASP.NET Core, Kestrel &amp; Giraffe</li>
+<li>MVC pattern</li>
 </ul>
 </section>
 <section >
@@ -136,14 +131,7 @@ Alternatives:
 <img src="images/azure.png" style="background: transparent; border: none; box-shadow: none" width="180" />
 <p><a href="https://azure.microsoft.com">https://azure.microsoft.com</a></p>
 <ul>
-<li><strong>Cloud</strong> provider from Microsoft</li>
-<li>
-Alternatives:
-<ul>
-<li>Amazon Web Services</li>
-<li>Google Cloud Platform</li>
-</ul>
-</li>
+<li><strong>Cloud</strong> provider</li>
 </ul>
 </section>
 <section >
@@ -152,28 +140,18 @@ Alternatives:
 <img src="images/fable_only_letter.png" style="background: transparent; border: none; box-shadow: none" width="100" />
 <p><a href="http://fable.io">http://fable.io</a></p>
 <ul>
-<li>F# to <strong>JS</strong> compiler powered by <a href="https://babeljs.io">Babel</a></li>
-<li>
-Alternatives:
-<ul>
-<li><a href="https://websharper.com/">WebSharper</a></li>
-</ul>
-</li>
+<li>F# to <strong>JavaScript compiler</strong></li>
+<li>Babel JS</li>
 </ul>
 </section>
 <section >
 <img src="images/safe_e.png" style="background: transparent; border: none; box-shadow: none"  />
 <h2><span style="color: #e7ad52;">E</span> for <span style="color: #e7ad52;">E</span>lmish <span></h2>
 <img src="images/elmish.png" style="background: transparent; border: none; box-shadow: none" width="140" />
-<p><a href="https://fable-elmish.github.io/elmish">https://fable-elmish.github.io/elmish</a></p>
+<p><a href="https://elmish.github.io">https://elmish.github.io</a></p>
 <ul>
-<li>UI library, inspired by Elm</li>
-<li>
-Alternatives:
-<ul>
-<li><a href="https://websharper.com/">WebSharper</a> models</li>
-</ul>
-</li>
+<li><strong>UI library</strong></li>
+<li>inspired by Elm</li>
 </ul>
 </section>
 <section >
@@ -187,19 +165,20 @@ Alternatives:
 <h2>Creating SAFE project</h2>
 <h4>Prerequisites:</h4>
 <ul>
-<li><a href="https://www.microsoft.com/net/core">dotnet SDK 2</a></li>
-<li><a href="https://nodejs.org/">node.js</a></li>
-<li><a href="https://yarnpkg.com/">yarn</a> or <a href="https://www.npmjs.com/">npm</a></li>
-<li><a href="https://www.microsoft.com/net/download">.NET Framework</a> or <a href="http://www.mono-project.com/">mono</a> for build process*</li>
+<li><a href="https://www.microsoft.com/net">.NET SDK 2.1</a></li>
+<li><a href="https://fake.build/">FAKE 5</a> as global .NET tool</li>
+<li><a href="https://www.microsoft.com/net/download?initial-os=windows">.NET Framework</a> / <a href="http://www.mono-project.com/">Mono</a> for <a href="https://github.com/fsprojects/Paket">Paket</a>*</li>
+<li><a href="https://nodejs.org/">Node.js</a></li>
+<li><a href="https://yarnpkg.com/">Yarn</a> or <a href="https://www.npmjs.com/">NPM</a></li>
 </ul>
-<p>* removing this dependency is WIP</p>
+<p>* removing this dependency is <a href="https://github.com/fsprojects/Paket/pull/3183">WIP</a></p>
 </section>
 <section >
 <h2>Creating SAFE project</h2>
 <ul>
 <li>Install SAFE template: <code>dotnet new -i SAFE.Template</code></li>
 <li>Create project from template: <code>dotnet new SAFE</code></li>
-<li>Build &amp; run: <code>build run</code></li>
+<li>Build &amp; run: <code>fake build --target run</code></li>
 <li>Wait for build to finish: app opens up in browser</li>
 </ul>
 </section>
@@ -215,7 +194,7 @@ Shared code
 <li>
 Server side
 <ul>
-<li><a href="https://suave.io">Suave</a></li>
+<li><a href="https://saturnframework.org/">Saturn</a></li>
 </ul>
 </li>
 <li>
@@ -223,7 +202,7 @@ Client side
 <ul>
 <li><a href="http://fable.io/">Fable</a></li>
 <li><a href="https://fable-elmish.github.io/elmish/">Elmish</a></li>
-<li><a href="https://reactjs.org/">React</a> under the hood</li>
+<li><a href="https://reactjs.org/">React</a></li>
 </ul>
 </li>
 </ul>
@@ -259,22 +238,27 @@ Client side
 <h2>Deploying the app</h2>
 <ul>
 <li>Bundle</li>
-<li>Docker</li>
-<li>Azure</li>
+<li>Azure Resource Manager (ARM) Template</li>
+<li>Azure App Service</li>
 </ul>
 </section>
 <section >
 <img src="images/safe_top.png" style="background: transparent; border: none; box-shadow: none"  />
 <h2>Next steps</h2>
 <ul>
+<li><a href="https://safe-stack.github.io/docs/">SAFE Docs</a> - SAFE in a nutshell</li>
+<li>
+Example apps
+<ul>
 <li><a href="https://github.com/SAFE-Stack/SAFE-BookStore">SAFE BookStore</a> - More complex + tests</li>
 <li><a href="https://github.com/SAFE-Stack/SAFE-Nightwatch">SAFE Nightwatch</a> - React Native</li>
 <li><a href="https://github.com/SAFE-Stack/SAFE-ConfPlanner">SAFE ConfPlanner</a> - CQRS + Event-Sourcing</li>
+</ul>
+</li>
 <li><a href="https://github.com/fable-compiler/fable-react/blob/master/docs/server-side-rendering.md#five-steps-to-enable-server-side-rendering-in-your-elmish--dotnet-app">Server-Side Rendering</a> - Back-end React</li>
 <li>You?</li>
 </ul>
-<p>Slides available at <a href="http://theimowski.com/talk-safe-stack">http://theimowski.com/talk-safe-stack</a></p>
-<p>The video will soon be available on <a href="https://skillsmatter.com/conferences/9419-f-sharp-exchange-2018#skillscasts">F# exchange website</a></p>
+<p>Slides: <a href="http://theimowski.com/talk-safe-stack">http://theimowski.com/talk-safe-stack</a></p>
 </section>
 
 
