@@ -11,24 +11,25 @@
 
 ## with <span style="color: #e7ad52;">F#</span> web stack
 
-Tomasz Heimowski *@theimowski*
+Tomasz Heimowski http://theimowski.com
 
-http://theimowski.com
+<img src="images/twitter.png" style="width:48px; background: transparent; border: none; box-shadow: none"  />
+<img src="images/github.png" style="width:48px; background: transparent; border: none; box-shadow: none"  /> 
+
+*@theimowski*
 
 ***
 
 ## Agenda
 
-* SAFE - big picture
-* Demo
-  * Overview
-  * Creating SAFE apps
-  * Building UI
-  * Client <-> Server communication
-  * Deploying
+* F#
+* SAFE
+* **Demo**
 * Q&A
 
-Slides available at http://theimowski.com/talk-safe-stack
+Slides available at 
+
+http://theimowski.com/talk-safe-stack
 
 ***
 
@@ -40,6 +41,18 @@ Slides available at http://theimowski.com/talk-safe-stack
 ***
 
 # My goal
+
+***
+
+# F#
+
+![F#](images/fsharp256.png)
+
+* Microsoft origin, OSS
+* **General** purpose
+* Functional-first
+* .NET / Mono / .NET Core / Web **browser**
+* https://fsharp.org/
 
 ***
 
@@ -73,6 +86,27 @@ Slides available at http://theimowski.com/talk-safe-stack
 
 ***
 
+- data-background : images/4CATS.jpg
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+## CATS
+
+### (Typical MS Stack)
+
+<img src="images/CSHARP.jpeg" style="width: 200px; background: transparent; border: none; box-shadow: none"  />
+<img src="images/ASPNET.gif" style="width: 200px; background: white; border: none; box-shadow: none"  />
+<img src="images/TYPESCRIPT.svg" style="width: 200px; background: none; border: none; box-shadow: none"  />
+<img src="images/SQLSERVER.png" style="width: 200px; background: white; border: none; box-shadow: none"  />
+
+
+
+***
+
 <img src="images/safe_top.png" style="background: transparent; border: none; box-shadow: none"  />
 
 ## big picture
@@ -99,7 +133,7 @@ https://safe-stack.github.io
 https://saturnframework.org/
 
 * **Web server**
-* ASP.NET Core, Kestrel & Giraffe
+* ASP.NET Core, Kestrel
 * MVC pattern
 
 ***

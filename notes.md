@@ -1,64 +1,78 @@
-# Before
+# Notes
+
+## In advance
 
 * Release slides (newest version)
-* Prepare fall-back steps (video + dirs)
+* Prepare fall-back steps (dirs)
 * Deploy test app to azure
 
----
+## Just before talk
 
-* Command prompt:
-  * Make sure docker-machine is running
-  * Login to docker hub
-    -> Docker DNS issues: `docker-machine ssh default` `sudo vi /etc/resolv.conf` change to 8.8.8.8
+* Terminal
+  * Make sure I got the `dotnet new SAFE` command right
 
 * Chrome browser:
   * Double check internet connection - speedtest.net
-  * Open conf vendor logo in browser to copy url
-  * Prepare Azure portal (incognito)
-  * Prepare Docker hub
-  * Prepare GoQr.me
-
-* Windows:
-  * Make sure Flux is not running
-  * Hide taskbar
-  * turn on *Presentation Mode* -> Windows Mobility Center  http://www.thewindowsclub.com/presentation-settings-in-windows-7
+  * Open conf vendor logo in browser to copy url: http://ihsgdansk.com/images/aktualnosci/devsharp2016/devsharp.png
+  * Prepare https://portal.azure.com
+  * Prepare http://GoQr.me
 
 * VS Code:
   * Open directory (after creating from template),
   * Hide menu bar,
   * Hide activity,
   * Hide status bar (Toggle visibility)
-  * Hide minimap
+  * Open a different window with steps.md just in case
 
 * Chrome app window:
-  * Chrome -> More tools -> Add to desktop -> Open as window -> open from desktop
-  * Side by side windows so that line with `Container.CustomClass Alignment.HasTextCentered` doesn't wrap
+  * https://applicationize.me/now -> chrome://apps -> SAFE
+  * Side by side ~2/3 so that app goes mobile mode
 
 * Start timer
 
-
-
-## DevSharp / autotask / mac
-
-* "LoveShack '18" "Dev# '18"
-* https://applicationize.me/now
-
-## F# Exchange
+## Customize
 
 ### UI
 
-* Logo - 128px, Style [ Border "2px solid" ]
-* "@F# eXchange '18"
-* Comments: ordered list, li [ Style [ TextAlign "left" ] ] 
+* Logo - Style [ Width 200; Border "2px solid" ] 
+* Title: "Dev# '18"
 * See results - same as submit, but IsLight Color, dispatch SeeResults
-* Explicit type signatures in SAFE.Template
 
-
-* Validation? e.g. `mkVote : model -> Result<Vote, ValidationError>`? But server-side?
+* C (C#)
+* A (ASP.NET)
+* S (Sql Server)
+* T (typescript)
 
 ---
 
-* https://res.cloudinary.com/skillsmatter/image/upload/c_fill,w_300,h_300,g_north_west/v1519237242/jtvg3oimrx6qdxwofs4a.png
+### Dev# Gdańsk
+
+* Audience - most not familiar with F#
+* F# Slide - assume audience knows C#, so make comparisons; Syntax is not important - pay attention to semantics
+* 50min compared to 45min in London
+* Don't code everything - use snippets (save time)
+* Deploy to azure in one go (save time)
+* Skip "See Scores" (save time)
+
+Plan:
+
+* 30.08
+  * 1 notes
+  * 2 trial
+  * 1 notes
+* 31.08
+  * 2 notes
+  * 2 trial
+* 19.09
+  * 1 trial just code
+  * 1 notes
+  * 2 trial
+* 20.09
+  * 1 final notes
+  * 1 backup
+  * 2 final trial
+
+### F# Exchange
 
 * Watch video from Lambda Days and write down notes
 * What to change compared to Lambda Days?

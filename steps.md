@@ -33,7 +33,4 @@
 
 #### Deploy
 
-* build.fsx: **change docker user and image name**
-* Copy and adjust Deploy target (push imageFullName, add to chain)
-* `build deploy` fast! copy image name
-* create repository in docker hub, create web app in azure
+* `fake build -t appservice ...`
