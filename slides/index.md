@@ -180,9 +180,15 @@ https://elmish.github.io
 
 ***
 
-##  Demo overview
+- data-background : images/demo_overview.png
 
-### Simple voting form
+***
+
+![demo_mobile](images/demo_mobile.png)
+
+***
+
+![demo_mobile](images/demo_mobile_results.png)
 
 ***
 
