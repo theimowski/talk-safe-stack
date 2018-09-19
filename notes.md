@@ -36,7 +36,6 @@
 
 * Logo - Style [ Width 200; Border "2px solid" ] 
 * Title: "Dev# '18"
-* See results - same as submit, but IsLight Color, dispatch SeeResults
 
 * C (C#)
 * A (ASP.NET)

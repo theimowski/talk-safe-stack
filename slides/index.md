@@ -272,6 +272,7 @@ https://elmish.github.io
 * Example apps
   * [SAFE BookStore](https://github.com/SAFE-Stack/SAFE-BookStore) - More complex + tests
   * [SAFE Nightwatch](https://github.com/SAFE-Stack/SAFE-Nightwatch) - React Native
+  * [SAFE Chat](https://github.com/SAFE-Stack/SAFE-Chat) - Akka.NET
   * [SAFE ConfPlanner](https://github.com/SAFE-Stack/SAFE-ConfPlanner) - CQRS + Event-Sourcing
 * [Server-Side Rendering](https://github.com/fable-compiler/fable-react/blob/master/docs/server-side-rendering.md#five-steps-to-enable-server-side-rendering-in-your-elmish--dotnet-app) - Back-end React
 * You?
