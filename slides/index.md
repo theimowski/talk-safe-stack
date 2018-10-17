@@ -198,11 +198,8 @@ https://elmish.github.io
 
 * [.NET SDK 2.1](https://www.microsoft.com/net)
 * [FAKE 5](https://fake.build/) as global .NET tool
-* [.NET Framework](https://www.microsoft.com/net/download?initial-os=windows) / [Mono](http://www.mono-project.com/) for [Paket](https://github.com/fsprojects/Paket)\*
 * [Node.js](https://nodejs.org/)
 * [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/)
-
-\* removing this dependency is [WIP](https://github.com/fsprojects/Paket/pull/3183)
 
 ***
 

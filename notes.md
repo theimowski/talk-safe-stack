@@ -67,8 +67,8 @@ Plan:
   * 1 notes
   * 2 trial
 * 20.09
-  * 1 final notes
   * 1 backup
+  * 1 final notes
   * 2 final trial
 
 ### F# Exchange
